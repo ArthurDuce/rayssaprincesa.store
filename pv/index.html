@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    h1 {
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .button {
+      background-color: green;
+      color: white;
+      padding: 15px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.5em;
+      border-radius: 5px;
+      width: 100%;
+    }
+    .disclaimer {
+      font-size: 0.3em;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Página de Segurança</h1>
+    <p>Seu Lugar está guardado! Basta clicar abaixo e ir para seu vídeo.</p>
+    <a class="button" href="">Clique Aqui para acessar o Vídeo</a>
+    <p class="disclaimer">Esse Site não faz parte e nem é endossado por nenhuma outra Organização.</br> Ele funciona de Forma Individual e não possui nenhuma ligação a marcas como Google, Meta ou Tiktok.</br> Direitos Reservados:SnapyCash | CNPJ:78.416.300/0001-43</p>
+  </div>
+
+  <script>
+(function() {
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+     if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function(item) {
+               if (item.href.indexOf('checkout.mycheckout.com.br') !== -1) {
+                    if (item.href.indexOf('?') === -1) {
+                         item.href += '?' + utmParamQueryString.toString();
+                    } else {
+                         item.href += '&' + utmParamQueryString.toString();
+                    }
+               }
+          });
+     }
+})();
+</script>
+
+</body>
+</html>
