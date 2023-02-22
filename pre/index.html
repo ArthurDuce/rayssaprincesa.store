@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pré-venda</title>
+    <style>
+        /* Estilos CSS para dispositivos móveis */
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background: url("back.png") no-repeat fixed center;
+            background-size: cover;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .container {
+            width: 700px;
+            max-width: 90%;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-family: "Arial Black", sans-serif;
+        }
+        h2 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: normal;
+            color: #fff;
+            font-family: "Segoe UI", sans-serif;
+        }
+        p {
+            text-align: center;
+            font-size: 8px;
+            color: #fff;
+            font-family: "Verdana", sans-serif;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #0000FF;
+            border: none;
+            border-radius: 5px;
+            font-family: "Rockwell", serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Página de Segurança</h1>
+        <h2>Esse site é SEGURO. Para Seguir e assistir seu vídeo Clique Abaixo.</h2>
+                <button onclick="window.location.href='';">Assistir Vídeo</button>
+        <p>Esse Site não faz parte e nem é endossado por nenhuma outra Organização.</br> Ele funciona de Forma Individual e não possui nenhuma ligação a marcas como Google, Meta ou Tiktok.</br> Direitos Reservados:SnapyCash | CNPJ:78.416.300/0001-43</p>
+    </div>
+</body>
+</html>
